@@ -20,12 +20,12 @@
       align-items: center;
       gap: 20px;
     }
-    a {
+    ul a {
       text-decoration: none;
       color: white;
       transition: 0.2s;
     }
-    a:hover {
+    ul a:hover {
       color: #f67e7e;
     }
     .nav__btn {
@@ -40,10 +40,17 @@
       line-height: 28px;
       color: #ffffff;
       transition: 0.2s;
+      text-decoration: none;
+      a {
+        text-decoration: none;
+        color: white;
+      }
     }
     .nav__btn:hover {
       background: #ffffff;
-      color: black;
+      a {
+        color: black;
+      }
     }
   }
 
@@ -69,6 +76,42 @@
   @media (max-width: 1200px) {
     nav {
       width: 90%;
+    }
+  }
+}
+@mixin read_alert {
+  .read {
+    padding: 20px 0;
+    height: 100px;
+    display: flex;
+    background: #f67e7e;
+    background-image: url(../imgs/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+    &__button {
+      padding: 10px;
+      border: 2px solid #012f34;
+      border-radius: 24px;
+      font-family: "Livvic";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: #012f34;
+      transition: 0.3s;
+    }
+    &__button:hover {
+      background: black;
+      color: white;
+    }
+    @media (max-width: 500px) {
+      height: 200px;
+      flex-direction: column;
+      align-items: center;
     }
   }
 }

@@ -1,0 +1,103 @@
+.contact__contact {
+  padding-top: 50px;
+  width: 100%;
+  background: #014e56;
+  background-image: url(../imgs/intro-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  .contact {
+    padding-bottom: 50px;
+    height: 600px;
+    margin: 0 auto;
+    width: 1200px;
+    display: flex;
+    justify-content: space-around;
+    .content {
+      h1 {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 100px;
+        color: #ffffff;
+      }
+      p {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 48px;
+        color: #f67e7e;
+      }
+      .box {
+        margin: 20px 0;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 28px;
+        color: #ffffff;
+        i {
+          margin-right: 20px;
+          font-size: 30px;
+        }
+      }
+      color: white;
+    }
+    .form {
+      width: 40%;
+    }
+    .form form {
+      display: flex;
+      flex-direction: column;
+      input {
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        border: 0;
+        color: white;
+        border-bottom: white 1px solid;
+      }
+      #textarea {
+        width: 100% !important;
+        max-height: 200px !important;
+        height: 70px;
+        background: transparent;
+        border: 0;
+        color: white;
+        width: auto;
+        border-bottom: white 1px solid;
+      }
+      button {
+        margin-top: 50px;
+        width: 100px;
+        box-sizing: border-box;
+        background: #ffffff;
+        height: 40px;
+        border: 2px solid #ffffff;
+        border-radius: 24px;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 28px;
+        color: #004047;
+      }
+    }
+  }
+  @media (max-width: 1200px) {
+    .contact {
+      padding-top: 100px;
+      width: 90%;
+      height: auto;
+      flex-direction: column;
+      align-items: center;
+      .form {
+        width: 70%;
+      }
+      .content {
+        width: 70%;
+        h1 {
+          text-align: center;
+          font-size: 40px;
+        }
+        p {
+          text-align: center;
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

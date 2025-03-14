@@ -13,5 +13,6 @@
 
 @import "./home-block/block";
 @import "./about-block/block";
-
+@import "./contact-block/contact";
+@include read_alert;
 @include footer;

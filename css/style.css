@@ -31,12 +31,12 @@
   align-items: center;
   gap: 20px;
 }
-.nav__Wrapper nav a {
+.nav__Wrapper nav ul a {
   text-decoration: none;
   color: white;
   transition: 0.2s;
 }
-.nav__Wrapper nav a:hover {
+.nav__Wrapper nav ul a:hover {
   color: #f67e7e;
 }
 .nav__Wrapper nav .nav__btn {
@@ -51,9 +51,16 @@
   line-height: 28px;
   color: #ffffff;
   transition: 0.2s;
+  text-decoration: none;
+}
+.nav__Wrapper nav .nav__btn a {
+  text-decoration: none;
+  color: white;
 }
 .nav__Wrapper nav .nav__btn:hover {
   background: #ffffff;
+}
+.nav__Wrapper nav .nav__btn:hover a {
   color: black;
 }
 .nav__Wrapper .burger_menu {
@@ -343,6 +350,288 @@
   font-size: 18px;
   line-height: 28px;
   color: #ffffff;
+}
+@media (max-width: 1200px) {
+  .intro__about {
+    height: 600px;
+  }
+  .intro__about .wrapper {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .intro__about .wrapper p {
+    width: 100%;
+    font-size: 15px;
+  }
+}
+
+.directors__about {
+  width: 100%;
+  background: #004047;
+}
+.directors__about .directors {
+  padding: 50px 0;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.directors__about .directors h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+  color: #ffffff;
+}
+.directors__about .directors__boxes {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  color: white;
+}
+.directors__about .directors__boxes .box {
+  padding: 40px 20px 0 0;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #012f34;
+}
+.directors__about .directors__boxes .box img {
+  max-width: 100px;
+}
+.directors__about .directors__boxes .box p {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  color: #79c8c7;
+}
+.directors__about .directors__boxes .box i {
+  font-family: "Livvic";
+  font-size: 15px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+}
+.directors__about .directors__boxes .box .plus {
+  position: relative;
+  top: 20px;
+  font-size: 40px;
+  color: #f67e7e;
+}
+.directors__about .directors__boxes .box:last-child {
+  text-align: center;
+}
+.directors__about .directors__boxes .box:last-child .plus {
+  position: relative;
+  top: 50px;
+  color: #79c8c7;
+}
+.directors__about .directors__boxes .box:last-child .logo {
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .directors__about .directors {
+    width: 90%;
+  }
+  .directors__about .directors__boxes {
+    justify-content: center;
+  }
+  .directors__about .directors__boxes .box {
+    width: 300px;
+  }
+  .directors__about .directors__boxes .box:last-child .plus {
+    top: 10px;
+  }
+}
+
+.clients__about {
+  padding-top: 100px;
+  width: 100%;
+  background: #012f34;
+  background-image: url("../imgs/clients-bg.png");
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.clients__about .clients {
+  height: 300px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  gap: 50px;
+}
+.clients__about .clients span {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 20px;
+}
+@media (max-width: 1200px) {
+  .clients__about .clients {
+    width: 90%;
+  }
+}
+@media (max-width: 600px) {
+  .clients__about .clients {
+    height: 400px;
+    width: 90%;
+  }
+  .clients__about .clients span {
+    text-align: center;
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+.contact__contact {
+  padding-top: 50px;
+  width: 100%;
+  background: #014e56;
+  background-image: url(../imgs/intro-left-bg.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+}
+.contact__contact .contact {
+  padding-bottom: 50px;
+  height: 600px;
+  margin: 0 auto;
+  width: 1200px;
+  display: flex;
+  justify-content: space-around;
+}
+.contact__contact .contact .content {
+  color: white;
+}
+.contact__contact .contact .content h1 {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 100px;
+  color: #ffffff;
+}
+.contact__contact .contact .content p {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #f67e7e;
+}
+.contact__contact .contact .content .box {
+  margin: 20px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+.contact__contact .contact .content .box i {
+  margin-right: 20px;
+  font-size: 30px;
+}
+.contact__contact .contact .form {
+  width: 40%;
+}
+.contact__contact .contact .form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact__contact .contact .form form input {
+  width: 100%;
+  height: 50px;
+  background: transparent;
+  border: 0;
+  color: white;
+  border-bottom: white 1px solid;
+}
+.contact__contact .contact .form form #textarea {
+  width: 100% !important;
+  max-height: 200px !important;
+  height: 70px;
+  background: transparent;
+  border: 0;
+  color: white;
+  width: auto;
+  border-bottom: white 1px solid;
+}
+.contact__contact .contact .form form button {
+  margin-top: 50px;
+  width: 100px;
+  box-sizing: border-box;
+  background: #ffffff;
+  height: 40px;
+  border: 2px solid #ffffff;
+  border-radius: 24px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #004047;
+}
+@media (max-width: 1200px) {
+  .contact__contact .contact {
+    padding-top: 100px;
+    width: 90%;
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+  }
+  .contact__contact .contact .form {
+    width: 70%;
+  }
+  .contact__contact .contact .content {
+    width: 70%;
+  }
+  .contact__contact .contact .content h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+  .contact__contact .contact .content p {
+    text-align: center;
+    font-size: 25px;
+  }
+}
+
+.read {
+  padding: 20px 0;
+  height: 100px;
+  display: flex;
+  background: #f67e7e;
+  background-image: url(../imgs/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.read__button {
+  padding: 10px;
+  border: 2px solid #012f34;
+  border-radius: 24px;
+  font-family: "Livvic";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 28px;
+  color: #012f34;
+  transition: 0.3s;
+}
+.read__button:hover {
+  background: black;
+  color: white;
+}
+@media (max-width: 500px) {
+  .read {
+    height: 200px;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .footer {
