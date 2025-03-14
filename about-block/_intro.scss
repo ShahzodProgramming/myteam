@@ -1,0 +1,29 @@
+.intro__about {
+  height: 400px;
+  padding-top: 100px;
+  background: #014e56;
+  width: 100%;
+  background-image: url("../imgs/introlefy.png");
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  .wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    h2 {
+      font-weight: 700;
+      font-size: 64px;
+      line-height: 100px;
+      color: #ffffff;
+    }
+    p {
+      width: 40%;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 28px;
+      color: #ffffff;
+    }
+  }
+}
